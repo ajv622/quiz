@@ -9,13 +9,6 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' });
 });
 
-<<<<<<< HEAD
-router.get('/quizes/question', quizController.question);
-router.get('/quizes/answer', quizController.answer);
-router.get('/author', authorController.author);
-=======
->>>>>>> origin/creditos
-
 router.get('/author', function(req, res) {
   res.render('author', {});
 });
