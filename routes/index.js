@@ -8,12 +8,11 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Quiz' });
 });
 
-// Autor
+
 router.get('/author', function(req, res) {
   res.render('author', {});
 });
 
-// autoload
 router.param('quizId', quizController.load);
 
 // Definición de rutas de /quizes
